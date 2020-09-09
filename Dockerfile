@@ -10,10 +10,6 @@ RUN apt update \
     && wget https://linux.mtasa.com/dl/multitheftauto_linux_x64.tar.gz
     && unzip multitheftauto_linux_x64.tar.gz
     && chmod +x mta-server64
-    
-USER
-
-ENV USER=container HOME=/home/container
 
 WORKDIR /mta
 
