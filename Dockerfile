@@ -19,6 +19,6 @@ WORKDIR /mta
 
 COPY ./entrypoint.sh /entrypoint.sh
 
-EXPOSE 22003 22005
+EXPOSE 22003/UDP 22005/TCP
 
 CMD ["/bin/bash", "/entrypoint.sh"]
