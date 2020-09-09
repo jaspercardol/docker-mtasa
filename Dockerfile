@@ -19,4 +19,6 @@ WORKDIR /mta
 
 COPY ./entrypoint.sh /entrypoint.sh
 
+EXPOSE 22003 22005
+
 CMD ["/bin/bash", "/entrypoint.sh"]
