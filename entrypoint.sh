@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd /mta
-mta-server64
+./mta-server64
