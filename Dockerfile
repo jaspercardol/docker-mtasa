@@ -2,7 +2,7 @@ FROM alpine:latest
 
 LABEL author="jaspercardol" maintainer="jaspercardol"
 
-RUN apt update \
+RUN apk update \
     && apk upgrade \
     && apk add libstdc++6 lib32stdc++6 libreadline5 libncursesw5 lib32ncursesw5 tar curl iproute2 openssl wget unzip \
     && mkdir /mta \
