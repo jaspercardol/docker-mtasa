@@ -9,10 +9,10 @@ RUN apk update \
     && cd /mta \
     && wget https://linux.mtasa.com/dl/multitheftauto_linux_x64.tar.gz \
     && tar -xf multitheftauto_linux_x64.tar.gz \
-    && cd multitheftauto_linux_x64
-    && cp * ..
-    && cd ..
-    && rm -rf multitheftauto_linux_x64
+    && cd multitheftauto_linux_x64 \
+    && cp * .. \
+    && cd .. \
+    && rm -rf multitheftauto_linux_x64 \
     && chmod +x mta-server64
 
 WORKDIR /mta
