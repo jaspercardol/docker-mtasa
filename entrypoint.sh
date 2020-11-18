@@ -18,4 +18,5 @@ if [ -z "$(ls -A /config)" ]; then # Is /config empty?
 fi
 
 cd /config
-./mta-server64
+ls
+exec mta-server64
