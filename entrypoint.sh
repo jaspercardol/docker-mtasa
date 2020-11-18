@@ -15,6 +15,7 @@ if [ -z "$(ls -A /config)" ]; then # Is /config empty?
     mv * /config
     cd /config
     rm -rf tmp
+    chmod +x mta-server64
 fi
 
 cd /config
