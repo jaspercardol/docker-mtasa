@@ -1,0 +1,13 @@
+version: "3.3"
+services:
+  mtaserver:
+    build: .
+    volumes:
+      - /CONFIG_DIR:/config
+    ports:
+      - "22003:22003"
+      - "22005:22005"
+    cap_add:
+      - NET_ADMIN
+      
+    restart: unless-stopped
