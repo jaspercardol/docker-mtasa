@@ -2,7 +2,7 @@ FROM alpine:latest
 
 LABEL author="jaspercardol" maintainer="jaspercardol"
 
-WORKDIR /mta
+WORKDIR /config
 
 COPY ./entrypoint.sh /entrypoint.sh
 
