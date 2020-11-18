@@ -4,10 +4,14 @@ services:
     build: .
     volumes:
       - /CONFIG_DIR:/config
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - LAN=192.168.0.0/16
     ports:
       - "22003:22003"
       - "22005:22005"
     cap_add:
       - NET_ADMIN
-      
+    network_mode: host
     restart: unless-stopped
