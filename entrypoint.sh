@@ -17,4 +17,5 @@ if [ -z "$(ls -A /config)" ]; then # Is /config empty?
     rm -rf tmp
 fi
 
+cd /config
 ./mta-server64
