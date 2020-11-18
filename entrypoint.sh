@@ -4,6 +4,7 @@ apk info -vv | grep 'iproute2'
 if [[ $? -eq 1 ]]; then
   apk update
   apk add tar curl iproute2 openssl wget unzip
+fi
 
 if [ -z "$(ls -A /config)" ]; then # Is /config empty?
     mkdir /config/tmp
@@ -14,6 +15,6 @@ if [ -z "$(ls -A /config)" ]; then # Is /config empty?
     mv * /config
     cd /config
     rm -rf tmp
-    
+fi
 
 ./mta-server64
